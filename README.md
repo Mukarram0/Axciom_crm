@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Executive Summary & Project Overview
+## 1. Executive Summary and Project Overview
 
 **AcxiomCRM** is an enterprise-grade Customer Relationship Management web application engineered for sales organizations to streamline, automate, and monitor the entire revenue lifecycle:
 $$\text{Lead Capture} \longrightarrow \text{Lead Assignment} \longrightarrow \text{Contact \& Qualification} \longrightarrow \text{Lead Conversion} \longrightarrow \text{Customer Management} \longrightarrow \text{Opportunity Pipeline} \longrightarrow \text{Follow-Up \& Activities} \longrightarrow \text{Sales Outcome (Won/Lost)}$$
