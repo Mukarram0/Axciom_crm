@@ -1,0 +1,16 @@
+{
+  "name": "acxiom-crm-root",
+  "version": "1.0.0",
+  "description": "AcxiomCRM - Enterprise Customer Relationship Management System (MERN Stack)",
+  "scripts": {
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build",
+    "test:api": "node server/tests/apiTest.js"
+  },
+  "keywords": ["crm", "mern", "sales-pipeline", "lead-management", "express", "mongodb", "react"],
+  "author": "Antigravity Senior MERN Architecture Team",
+  "license": "ISC"
+}

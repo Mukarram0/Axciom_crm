@@ -1,0 +1,203 @@
+/* AcxiomCRM Custom Stylesheet */
+:root {
+  --crm-navy: #1a2332;
+  --crm-navy-dark: #111827;
+  --crm-navy-light: #243147;
+  --crm-primary: #0d6efd;
+  --crm-accent: #3b82f6;
+  --crm-bg: #f4f6f9;
+  --crm-card-border: #e5e7eb;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--crm-bg);
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+/* App Shell Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: var(--crm-navy);
+  color: #e5e7eb;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1030;
+}
+
+.sidebar .sidebar-brand {
+  padding: 1.25rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid var(--crm-navy-light);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.sidebar .nav-link {
+  color: #9ca3af;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: var(--crm-navy-light);
+}
+
+.sidebar .nav-link.active {
+  color: #ffffff;
+  background-color: var(--crm-navy-light);
+  border-left-color: var(--crm-accent);
+}
+
+.sidebar .sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  padding: 1rem 1.5rem 0.5rem;
+  font-weight: 600;
+}
+
+/* Main Content Area */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--crm-card-border);
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* Content Area */
+.content-body {
+  flex: 1;
+  padding: 1.75rem;
+}
+
+/* Cards */
+.card-crm {
+  background: #ffffff;
+  border: 1px solid var(--crm-card-border);
+  border-radius: 0.625rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-crm:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+/* KPI Card */
+.kpi-card {
+  border-radius: 0.625rem;
+  border: 1px solid var(--crm-card-border);
+  background: #ffffff;
+  padding: 1.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kpi-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.kpi-subtitle {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+/* Data Table */
+.table-crm th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  color: #4b5563;
+  letter-spacing: 0.025em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-crm td {
+  vertical-align: middle;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* Badges */
+.badge-pill-custom {
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.35em 0.75em;
+  border-radius: 9999px;
+}
+
+/* Auth Cards */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--crm-navy-dark) 0%, var(--crm-navy) 100%);
+  padding: 2rem 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2.25rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Demo account pills */
+.demo-pill {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.demo-pill:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
