@@ -7,7 +7,7 @@
 
 **AcxiomCRM** is an enterprise-grade Customer Relationship Management web application engineered for sales organizations to streamline, automate, and monitor the entire revenue lifecycle:
 
-
+$$\text{Lead Capture} \longrightarrow \text{Lead Assignment} \longrightarrow \text{Contact \& Qualification} \longrightarrow \text{Lead Conversion} \longrightarrow \text{Customer Management} \longrightarrow \text{Opportunity Pipeline} \longrightarrow \text{Follow-Up \& Activities} \longrightarrow \text{Sales Outcome (Won/Lost)}$$
 
 The project replaces legacy spreadsheet management and rigid ASP.NET architectures with a high-performance, modular **MERN Stack** (MongoDB, Express.js, React 18, Node.js) web application enforcing three-tier validation, strict Role-Based Access Control (RBAC), append-only audit trails, and interactive Chart.js analytics.
 
